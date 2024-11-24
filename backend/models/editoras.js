@@ -14,7 +14,4 @@ const editoraSchema = new Schema(
 );
 
 const Editora = mongoose.model("Editora", editoraSchema);
-module.exports = {
-  Editora,
-  editoraSchema
-};
+module.exports = {Editora};

@@ -40,7 +40,4 @@ const historicoSchema = new Schema(
 );
 
 const Historico = mongoose.model("Historico", historicoSchema);
-module.exports = {
-  Historico,
-  historicoSchema
-};
+module.exports = {Historico};

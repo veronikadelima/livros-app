@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const userController = require("../controllers/livroController");
+const userController = require("../controllers/userController");
 
 // Rotas para /livros
 router
