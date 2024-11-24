@@ -1,0 +1,8 @@
+main {
+  width: 80%;
+  height: calc(100vh - 110px);
+}
+
+.table-area {
+  padding: 20px;
+}

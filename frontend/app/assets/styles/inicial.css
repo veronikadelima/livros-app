@@ -1,0 +1,21 @@
+main {
+  width: 80%;
+  height: calc(100vh - 110px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.area-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+}
+
+h3 {
+  color: #2F2E30;
+  padding-bottom: 50px;
+}

@@ -1,0 +1,128 @@
+###
+  ### INÍCIO DA SEÇÃO TESTE ENDPOINT EDITORAS ###
+###
+POST http://localhost:3000/api/editoras
+Content-Type: application/json
+
+{
+  "nome": "Asteca Livraria"
+}
+
+###
+GET http://localhost:3000/api/editoras
+
+###
+GET http://localhost:3000/api/editoras/6740b47cf2e4250b6872a816
+
+###
+DELETE http://localhost:3000/api/editoras/6740b9a4f2e4250b6872a81b
+
+###
+PUT http://localhost:3000/api/editoras/6742af118f99350e7fa7b0e9
+Content-Type: application/json
+
+{
+  "nome": "Astheca Book"
+}
+###
+  ### INÍCIO DA SEÇÃO TESTE ENDPOINT USERS ###
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "nome": "Serionando",
+  "email": "serionando@tantra.com",
+  "password": "123456789",
+  "nivel_acesso": "admin"
+}
+
+###
+GET http://localhost:3000/api/users
+
+###
+GET http://localhost:3000/api/users/67415165ba51992c790a30df
+
+###
+DELETE http://localhost:3000/api/users/674150a0ba51992c790a30db
+
+###
+PUT http://localhost:3000/api/users/6741511fba51992c790a30dd
+Content-Type: application/json
+
+{
+  "nome": "Fulano dos Santos",
+  "email": "fulanodossantos@muzila.com",
+  "password": "123456789",
+  "nivel_acesso": ""
+  
+}
+###
+  ### INÍCIO DA SEÇÃO TESTE ENDPOINTS LIVROS ###
+###
+POST http://localhost:3000/api/livros
+Content-Type: application/json
+
+{
+  "id_editora": "6741b54372b64bcd5ca06f15",
+  "titulo": "A conquista dos que não foram",
+  "resumo": "Um grupo que iria participar de um campeonato, mas na hora H desistiram. E para as suas sorte, pois o avião que iria levar o grupo sofreu um acidente, e, era para eles estarem a bordo. Assim começa essa história.",
+  "autores": "Zé Ninguém, João Ninguém"
+}
+
+###
+GET http://localhost:3000/api/livros
+
+###
+GET http://localhost:3000/api/livros/67415165ba51992c790a30df
+
+###
+DELETE http://localhost:3000/api/livros/6741798413fb7291675ee1ea
+
+###
+PUT http://localhost:3000/api/livros/6741798413fb7291675ee1ea
+Content-Type: application/json
+
+{
+  "id_editora": "",
+  "titulo": "Um titulo do Resumo",
+  "resumo": "Um resumo qualquer",
+  "autores": "Fulano, Siclano, Beltrano"
+}
+###
+  ### INÍCIO DA SEÇÃO TESTE ENDPOINTS HISTORICO ###
+###
+POST http://localhost:3000/api/historicos
+Content-Type: application/json
+
+{
+  "id_user": "6741bb1e413aebaf97ab6381",
+  "id_livro": "6741b59372b64bcd5ca06f17",
+  "ultima_pagina_acessada": 0,
+  "numero_paginas_lidas": 0,
+  "leitura_concluida": "não",
+  "visualizado": "não"
+}
+
+###
+GET http://localhost:3000/api/historicos
+
+###
+GET http://localhost:3000/api/historicos/6741bcc186eca34714395ec3
+
+###
+DELETE http://localhost:3000/api/historicos/6741bcc186eca34714395ec3
+
+###
+PUT http://localhost:3000/api/historicos/6741bd2c86eca34714395eca
+Content-Type: application/json
+
+{
+  "id_user": "6741bb1e413aebaf97ab6381",
+  "id_livro": "6741b59372b64bcd5ca06f17",
+  "ultima_pagina_acessada": 16,
+  "numero_paginas_lidas": 25,
+  "leitura_concluida": "não",
+  "visualizado": "sim"
+}
+
