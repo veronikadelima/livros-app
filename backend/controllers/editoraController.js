@@ -6,7 +6,6 @@ const editoraController = {
   create: async(req, res) => {
     try {
       const editora = {
-        _id: req.body._id,
         nome: req.body.nome
       }
       const response = await EditoraModel.create(editora);

@@ -6,7 +6,6 @@ const historicoController = {
   create: async(req, res) => {
     try {
       const historico = {
-        _id: req.body._id,
         id_user: req.body.id_user,
         id_livro: req.body.id_livro,
         ultima_pagina_acessada: req.body.ultima_pagina_acessada,

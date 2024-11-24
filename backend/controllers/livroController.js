@@ -7,7 +7,6 @@ const livroController = {
   create: async(req, res) => {
     try {
       const livro = {
-        _id: req.body._id,
         id_editora: req.body.id_editora,
         titulo: req.body.titulo,
         resumo: req.body.resumo,

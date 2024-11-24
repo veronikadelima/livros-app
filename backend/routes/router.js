@@ -16,4 +16,9 @@ router.use("/livros", livroRouter); // Define um prefixo claro para as rotas de 
 const historicoRouter = require("./historico");
 router.use("/historicos", historicoRouter); // Define um prefixo claro para as rotas de históricos
 
+router.use((req, res, next) => {
+  console.log(`Recebida ${req.method} em ${req.path}`);
+  next();
+});
+
 module.exports = router;
