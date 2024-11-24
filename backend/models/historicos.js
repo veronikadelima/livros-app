@@ -3,10 +3,6 @@ const { Schema } = mongoose;
 
 const historicoSchema = new Schema(
   {
-    _id: {
-      type: Number,
-      unique: true
-    },
     id_user: {
       type: mongoose.Schema.Types.ObjectId, 
       ref: 'User', 

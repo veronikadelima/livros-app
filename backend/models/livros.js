@@ -3,10 +3,6 @@ const { Schema } = mongoose;
 
 const livroSchema = new Schema(
   {
-    _id: {
-      type: Number,
-      unique: true
-    },
     id_editora: { 
       type: mongoose.Schema.Types.ObjectId, 
       ref: 'Editora', 

@@ -3,10 +3,6 @@ const { Schema } = mongoose;
 
 const userSchema = new Schema(
   {
-    _id: {
-      type: Number,
-      unique: true
-    },
     nome: {
       type: String,
       required: true
