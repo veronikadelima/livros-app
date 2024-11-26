@@ -9,7 +9,7 @@ app.use(cors());
 
 app. use(express.json());
 
-// Conexão com o banco de dados
+//Conexão com o banco de dados
 conn();
 
 //Routes

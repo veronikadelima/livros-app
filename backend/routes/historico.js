@@ -1,13 +1,13 @@
 const router = require("express").Router();
-const historicoController = require("../controllers/historicoController");
+const hitoricoController = require("../controllers/historicoController");
 
-// Rotas para /livros
-router.route("/historicos").post(historicoController.create) // Criar um novo livro
-router.route("/historicos").get(historicoController.getAll); // Obter todos os livros
+// Rotas para /historicos
+router.route("/").post((req, res) => historicoController.create(req, res)); // Criar um novo historico
+router.route("/").get((req, res) => historicoController.getAll(req, res)); // Obter todos os historicos
 
-// Rotas para /livros/:id
-router.route("/historicos").get(historicoController.get)     // Obter um livro específico
-router.route("/historicos").put(historicoController.update)  // Atualizar um livro específico
-router.route("/historicos").delete(historicoController.delete); // Excluir um livro específico
+// Rotas para /historicos/:id
+router.route("/:id").get((req, res) =>historicoController.get(req, res));    // Obter um historico específico
+router.route("/:id").delete((req, res) =>historicoController.delete(req, res));// Excluir um historico específico
+router.route("/:id").put((req, res) =>historicoController.update(req, res)); // Atualizar um historico específico
 
 module.exports = router;
